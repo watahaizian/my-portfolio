@@ -1,66 +1,113 @@
----
-// ここは空でOK
----
-
-<section id="projects" class="bg-slate-100">
-    <div class="max-w-5xl mx-auto">
-        <h2 class="text-3xl font-bold text-center mb-12">Projects</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div
-                class="bg-white p-6 rounded-lg shadow-lg border border-slate-200"
+<section id="projects" class="bg-slate-100 py-20">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-4xl font-extrabold text-center mb-16 text-slate-800">
+      My Projects
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div
+        class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col transform hover:-translate-y-1 transition-transform duration-300"
+      >
+        <!-- <div class="h-60 bg-gray-200 flex items-center justify-center">
+          <img
+            src="/placeholder-task-app.webp"
+            alt="タスク管理アプリケーションのスクリーンショット"
+            class="w-full h-full object-cover"
+          />
+        </div> -->
+        <div class="p-6 flex flex-col flex-grow">
+          <h3 class="text-xl font-bold mb-2 text-slate-900">
+            フルスタック・タスク管理アプリ
+          </h3>
+          <p class="text-slate-600 flex-grow mb-4">
+            ユーザー認証、データベース連携、ドラッグ＆ドロップによる直感的な操作が可能な、Trello風のかんばんボード・アプリケーションです。Cloudflareのモダンなサーバーレス技術を駆使し、企画からデプロイまで、開発の全工程を実践しました。
+          </p>
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span
+              class="bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full"
+              >React</span
             >
-                <h3 class="text-xl font-semibold mb-2">
-                    機械学習モデルを用いた地理空間リスク可視化アプリ
-                </h3>
-                <p class="text-slate-600 mb-4">
-                    研究で構築したCNNモデルを活用し、土砂災害リスクを分析・可視化するフルスタックWebアプリケーションです。<br
-                    /><small
-                        >🎓 現在、研究内容の公開許諾を指導教官に確認中です。</small
-                    >
-                </p>
-                <div class="flex flex-wrap gap-2">
-                    <span
-                        class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full"
-                        >React</span
-                    >
-                    <span
-                        class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full"
-                        >Leaflet</span
-                    >
-                    <span
-                        class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full"
-                        >Hono</span
-                    >
-                    <span
-                        class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full"
-                        >Cloudflare Workers</span
-                    >
-                </div>
-            </div>
-            <div
-                class="bg-white p-6 rounded-lg shadow-lg border border-slate-200"
+            <span
+              class="bg-sky-100 text-sky-800 text-xs font-semibold px-3 py-1 rounded-full"
+              >TypeScript</span
             >
-                <h3 class="text-xl font-semibold mb-2">
-                    ポートフォリオサイト (このサイト)
-                </h3>
-                <p class="text-slate-600 mb-4">
-                    パフォーマンスと開発体験を重視し、Astroフレームワークを使用して構築しました。
-                </p>
-                <div class="flex flex-wrap gap-2">
-                    <span
-                        class="bg-indigo-100 text-indigo-800 text-xs font-semibold px-2.5 py-0.5 rounded-full"
-                        >Astro</span
-                    >
-                    <span
-                        class="bg-indigo-100 text-indigo-800 text-xs font-semibold px-2.5 py-0.5 rounded-full"
-                        >TypeScript</span
-                    >
-                    <span
-                        class="bg-indigo-100 text-indigo-800 text-xs font-semibold px-2.5 py-0.5 rounded-full"
-                        >Tailwind CSS</span
-                    >
-                </div>
-            </div>
+            <span
+              class="bg-orange-100 text-orange-800 text-xs font-semibold px-3 py-1 rounded-full"
+              >Hono</span
+            >
+            <span
+              class="bg-orange-100 text-orange-800 text-xs font-semibold px-3 py-1 rounded-full"
+              >Cloudflare</span
+            >
+            <span
+              class="bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full"
+              >Tailwind CSS</span
+            >
+          </div>
+          <div class="flex gap-4 mt-auto">
+            <a
+              href="https://task.watahaizian.com"
+              class="w-full text-center px-4 py-2 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-700 transition-colors"
+              target="_blank"
+              rel="noopener noreferrer">Live Demo</a
+            >
+            <a
+              href="https://github.com/watahaizian/my-task-app"
+              class="w-full text-center px-4 py-2 bg-slate-200 text-slate-800 font-semibold rounded-lg hover:bg-slate-300 transition-colors"
+              target="_blank"
+              rel="noopener noreferrer">GitHub</a
+            >
+          </div>
         </div>
+      </div>
+
+      <div
+        class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col transform hover:-translate-y-1 transition-transform duration-300"
+      >
+        <!-- <div class="h-60 bg-gray-200 flex items-center justify-center">
+          <img
+            src="/placeholder-gis-app.webp"
+            alt="地理空間リスク可視化アプリのスクリーンショット"
+            class="w-full h-full object-cover"
+          />
+        </div> -->
+        <div class="p-6 flex flex-col flex-grow">
+          <h3 class="text-xl font-bold mb-2 text-slate-900">
+            機械学習モデルを用いた地理空間リスク可視化アプリ
+          </h3>
+          <p class="text-slate-600 flex-grow mb-4">
+            卒業研究で構築したCNNモデルを活用し、土砂災害リスクを分析・可視化するWebアプリケーションです。<br
+            />
+            <small
+              >🎓 **ステータス:**
+              現在、研究内容の公開許諾を指導教官に確認中です。</small
+            >
+          </p>
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span
+              class="bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full"
+              >React</span
+            >
+            <span
+              class="bg-emerald-100 text-emerald-800 text-xs font-semibold px-3 py-1 rounded-full"
+              >Leaflet</span
+            >
+            <span
+              class="bg-orange-100 text-orange-800 text-xs font-semibold px-3 py-1 rounded-full"
+              >Cloudflare</span
+            >
+            <span
+              class="bg-purple-100 text-purple-800 text-xs font-semibold px-3 py-1 rounded-full"
+              >Python</span
+            >
+          </div>
+          <div class="flex gap-4 mt-auto">
+            <span
+              class="w-full text-center px-4 py-2 bg-slate-100 text-slate-400 font-semibold rounded-lg cursor-not-allowed"
+              >Private</span
+            >
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
