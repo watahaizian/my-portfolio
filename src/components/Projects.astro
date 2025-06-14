@@ -3,23 +3,21 @@
     <h2 class="text-4xl font-extrabold text-center mb-16 text-slate-800">
       My Projects
     </h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+    {/* ★★★ プロジェクトが3つになったので、lg画面では3列表示にする ★★★ */}
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      {/* --- プロジェクト 1: タスク管理アプリ --- */}
       <div
         class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col transform hover:-translate-y-1 transition-transform duration-300"
       >
         <!-- <div class="h-60 bg-gray-200 flex items-center justify-center">
-          <img
-            src="/placeholder-task-app.webp"
-            alt="タスク管理アプリケーションのスクリーンショット"
-            class="w-full h-full object-cover"
-          />
+          <img src="/placeholder-task-app.webp" alt="タスク管理アプリケーションのスクリーンショット" class="w-full h-full object-cover" />
         </div> -->
         <div class="p-6 flex flex-col flex-grow">
           <h3 class="text-xl font-bold mb-2 text-slate-900">
             フルスタック・タスク管理アプリ
           </h3>
           <p class="text-slate-600 flex-grow mb-4">
-            ユーザー認証、データベース連携、ドラッグ＆ドロップによる直感的な操作が可能な、Trello風のかんばんボード・アプリケーションです。Cloudflareのモダンなサーバーレス技術を駆使し、企画からデプロイまで、開発の全工程を実践しました。
+            ユーザー認証、DB連携、ドラッグ＆ドロップ操作が可能なTrello風アプリ。Cloudflareのサーバーレス技術を駆使し、企画からデプロイまでを実践しました。
           </p>
           <div class="flex flex-wrap gap-2 mb-6">
             <span
@@ -27,15 +25,11 @@
               >React</span
             >
             <span
-              class="bg-sky-100 text-sky-800 text-xs font-semibold px-3 py-1 rounded-full"
-              >TypeScript</span
-            >
-            <span
               class="bg-orange-100 text-orange-800 text-xs font-semibold px-3 py-1 rounded-full"
               >Hono</span
             >
             <span
-              class="bg-orange-100 text-orange-800 text-xs font-semibold px-3 py-1 rounded-full"
+              class="bg-sky-100 text-sky-800 text-xs font-semibold px-3 py-1 rounded-full"
               >Cloudflare</span
             >
             <span
@@ -60,6 +54,50 @@
         </div>
       </div>
 
+      {/* ★★★ プロジェクト 2: このポートフォリオサイト ★★★ */}
+      <div
+        class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col transform hover:-translate-y-1 transition-transform duration-300"
+      >
+        <!-- <div class="h-60 bg-gray-200 flex items-center justify-center">
+          <img
+            src="/placeholder-portfolio.webp"
+            alt="ポートフォリオサイトのスクリーンショット"
+            class="w-full h-full object-cover"
+          />
+        </div> -->
+        <div class="p-6 flex flex-col flex-grow">
+          <h3 class="text-xl font-bold mb-2 text-slate-900">
+            ポートフォリオサイト (このサイト)
+          </h3>
+          <p class="text-slate-600 flex-grow mb-4">
+            高速な表示と優れた開発体験を求め、Astroフレームワークを選択。自身のスキルと制作物を紹介するために、デザインから実装まで行いました。
+          </p>
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span
+              class="bg-orange-100 text-orange-800 text-xs font-semibold px-3 py-1 rounded-full"
+              >Astro</span
+            >
+            <span
+              class="bg-sky-100 text-sky-800 text-xs font-semibold px-3 py-1 rounded-full"
+              >TypeScript</span
+            >
+            <span
+              class="bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full"
+              >Tailwind CSS</span
+            >
+          </div>
+          <div class="flex gap-4 mt-auto">
+            <a
+              href="https://github.com/watahaizian/my-portfolio"
+              class="w-full text-center px-4 py-2 bg-slate-200 text-slate-800 font-semibold rounded-lg hover:bg-slate-300 transition-colors"
+              target="_blank"
+              rel="noopener noreferrer">GitHub</a
+            >
+          </div>
+        </div>
+      </div>
+
+      {/* --- プロジェクト 3: 卒業研究 --- */}
       <div
         class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col transform hover:-translate-y-1 transition-transform duration-300"
       >
@@ -72,15 +110,12 @@
         </div> -->
         <div class="p-6 flex flex-col flex-grow">
           <h3 class="text-xl font-bold mb-2 text-slate-900">
-            機械学習モデルを用いた地理空間リスク可視化アプリ
+            地理空間リスク可視化アプリ
           </h3>
           <p class="text-slate-600 flex-grow mb-4">
-            卒業研究で構築したCNNモデルを活用し、土砂災害リスクを分析・可視化するWebアプリケーションです。<br
+            研究で構築したCNNモデルを活用し、土砂災害リスクを分析・可視化するWebアプリケーションです。<br
             />
-            <small
-              >🎓 **ステータス:**
-              現在、研究内容の公開許諾を指導教官に確認中です。</small
-            >
+            <small>🎓 ステータス: 現在、指導教官に許諾を確認中です。</small>
           </p>
           <div class="flex flex-wrap gap-2 mb-6">
             <span
@@ -90,10 +125,6 @@
             <span
               class="bg-emerald-100 text-emerald-800 text-xs font-semibold px-3 py-1 rounded-full"
               >Leaflet</span
-            >
-            <span
-              class="bg-orange-100 text-orange-800 text-xs font-semibold px-3 py-1 rounded-full"
-              >Cloudflare</span
             >
             <span
               class="bg-purple-100 text-purple-800 text-xs font-semibold px-3 py-1 rounded-full"
