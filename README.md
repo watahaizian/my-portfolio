@@ -1,47 +1,53 @@
-# Astro Starter Kit: Minimal
+# My Personal Portfolio
 
-```sh
-pnpm create astro@latest -- --template minimal
-```
+これは、自身のスキルと制作物を紹介するために構築した、個人のポートフォリオサイトです。
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+**✨ Live Demo: [https://watahaizian.com](https://watahaizian.com)**
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+---
 
-## 🚀 Project Structure
+## 概要 (Overview)
 
-Inside of your Astro project, you'll see the following folders and files:
+このWebサイトは、私のこれまでの学習成果と開発したプロジェクトをまとめた、個人のポートフォリオです。高速な静的サイト生成と優れた開発体験を両立する `Astro` フレームワークをメインに、モダンな技術を用いて構築しました。
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+デザインは `Tailwind CSS` を用いて、クリーンで分かりやすいUIを目指しました。
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## 使用技術 (Technology Stack)
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+このポートフォリオサイトの構築に使用した主な技術です。
 
-Any static assets, like images, can be placed in the `public/` directory.
+-   **フレームワーク**: `Astro`
+-   **言語**: `TypeScript`
+-   **スタイリング**: `Tailwind CSS`
+-   **パッケージマネージャー**: `pnpm`
+-   **ホスティング**: `Cloudflare Pages`
 
-## 🧞 Commands
+## ローカル環境での実行 (Getting Started)
 
-All commands are run from the root of the project, from a terminal:
+1.  **リポジトリをクローン**
+    ```bash
+    git clone https://github.com/watahaizian/my-portfolio.git
+    cd my-portfolio
+    ```
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+2.  **依存パッケージをインストール**
+    ```bash
+    pnpm install
+    ```
 
-## 👀 Want to learn more?
+3.  **開発サーバーを起動**
+    ```bash
+    pnpm dev
+    ```
+    ブラウザで `http://localhost:4321` を開いてください。
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## デプロイ (Deployment)
+
+このサイトはCloudflare Pagesにデプロイされており、GitHubの`main`ブランチにプッシュされるたびに、自動的にビルドとデプロイが実行されます。
+
+-   **ビルドコマンド**: `pnpm build`
+-   **出力ディレクトリ**: `dist`
+
+## ライセンス (License)
+
+This project is licensed under the MIT License.
