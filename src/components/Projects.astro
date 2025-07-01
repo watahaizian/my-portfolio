@@ -3,8 +3,8 @@
     <h2 class="text-4xl font-extrabold text-center mb-16 text-slate-800">
       My Projects
     </h2>
-    {/* ★★★ プロジェクトが3つになったので、lg画面では3列表示にする ★★★ */}
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+    {/* ★★★ 4つのプロジェクトを2x2で表示 ★★★ */}
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
       {/* --- プロジェクト 1: タスク管理アプリ --- */}
       <div
         class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col transform hover:-translate-y-1 transition-transform duration-300"
@@ -135,6 +135,52 @@
             <span
               class="w-full text-center px-4 py-2 bg-slate-100 text-slate-400 font-semibold rounded-lg cursor-not-allowed"
               >Private</span
+            >
+          </div>
+        </div>
+      </div>
+
+      {/* --- プロジェクト 4: ノノグラムパズルゲーム --- */}
+      <div
+        class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col transform hover:-translate-y-1 transition-transform duration-300"
+      >
+        <div class="p-6 flex flex-col flex-grow">
+          <h3 class="text-xl font-bold mb-2 text-slate-900">
+            ノノグラムパズルゲーム
+          </h3>
+          <p class="text-slate-600 flex-grow mb-4">
+            数字をヒントにイラストを完成させる「ノノグラム（お絵かきロジック）」パズルゲーム。Clerk認証、Honoバックエンド、Reactフロントエンドを組み合わせ、Cloudflareのサーバーレス環境で開発しました。
+          </p>
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span
+              class="bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full"
+              >React</span
+            >
+            <span
+              class="bg-orange-100 text-orange-800 text-xs font-semibold px-3 py-1 rounded-full"
+              >Hono</span
+            >
+            <span
+              class="bg-sky-100 text-sky-800 text-xs font-semibold px-3 py-1 rounded-full"
+              >Cloudflare</span
+            >
+            <span
+              class="bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full"
+              >Tailwind CSS</span
+            >
+          </div>
+          <div class="flex gap-4 mt-auto">
+            <a
+              href="https://nono.watahaizian.com"
+              class="w-full text-center px-4 py-2 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-700 transition-colors"
+              target="_blank"
+              rel="noopener noreferrer">Live Demo</a
+            >
+            <a
+              href="https://github.com/watahaizian/nono-app"
+              class="w-full text-center px-4 py-2 bg-slate-200 text-slate-800 font-semibold rounded-lg hover:bg-slate-300 transition-colors"
+              target="_blank"
+              rel="noopener noreferrer">GitHub</a
             >
           </div>
         </div>
